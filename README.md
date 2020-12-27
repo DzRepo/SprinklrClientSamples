@@ -59,7 +59,7 @@ Other commands available:
 [FetchWebhookTypes](FetchWebhookTypes.py)  
 [SearchAssets](SearchAssets.py)  
 
-## Most commands require a SprinklrClient.conf file, formatted as below. 
+## Most commands require a Sprinklr.conf file, formatted as below. 
 \#  Configuration File Sprinklr.conf  
 access_token=THE_ACCESS_TOKEN   
 refresh_token=THE_REFRESH_TOKEN   
