@@ -60,9 +60,9 @@ Other commands available:
 [SearchAssets](SearchAssets.py)  
 
 ## Most commands require a SprinklrClient.conf file, formatted as below. 
-\#  Configuration File Sprinklr.conf 
-access_token=THE_ACCESS_TOKEN  
-refresh_token=THE_REFRESH_TOKEN  
-redirect_uri=THE_EXACT_REDIRECT_URL_STORED_FOR_THE_APP_KEY  
-key=THE_APP_KEY  
-secret=THE_SECRET_KEY  
+\#  Configuration File Sprinklr.conf  
+access_token=THE_ACCESS_TOKEN   
+refresh_token=THE_REFRESH_TOKEN   
+redirect_uri=THE_EXACT_REDIRECT_URL_STORED_FOR_THE_APP_KEY   
+key=THE_APP_KEY   
+secret=THE_SECRET_KEY   
