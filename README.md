@@ -1,6 +1,8 @@
 # SprinklrClientSamples
 A collection of python command line tools that use the Sprinklr Client Library
+
 This is a work in progress, but in a usable state.
+
 Built using python 3.7+
 
 The SprinklrClient library located here is a bit newer than the one in the main library. The main change being Asset APIs have been tested and fixed.
