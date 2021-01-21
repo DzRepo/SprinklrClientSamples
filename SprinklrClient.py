@@ -281,7 +281,7 @@ class SprinklrClient:
                        f'code={code}')
 
         headers = {'Content-Type': 'application/x-www-form-urlencoded'}
-
+        
         response = None      
         verb = "POST (Authorize)"          
         try:
