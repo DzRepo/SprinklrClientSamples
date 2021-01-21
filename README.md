@@ -47,6 +47,7 @@ Current commands available:
 * [CustomFieldDeleteOption](CustomFieldAddOption.py) 
 * [FetchAccessibleUsers](FetchAccessibleUsers.py)  
 * [FetchAccessToken](FetchAccessToken.py)
+* [FetchAccountByChannelId](FetchAccountByChannelId.py)
 * [FetchAccountCustomFields](FetchAccountCustomFields.py)  
 * [FetchAllDashboards](FetchAllDashboards.py)  
 * [FetchArchivedCases](FetchArchivedCases.py)  
