@@ -7,6 +7,8 @@ Built using python 3.7+
 
 The SprinklrClient library located here is a bit newer than the one in the main library. The main change being Asset APIs have been tested and fixed.
 
+The single "[SprinklrClientTest](https://github.com/DzRepo/SprinklrClientTest)" repo / app was getting to cumbersome, so this will replace it once all commands have been converted into individual programs.
+
 External Libraries in use: 
 - [EasySettings](https://libraries.io/pypi/EasySettings) (for the Conf file)
 - [SprinklrClient](https://libraries.io/pypi/SprinklrClient) (NOTE: The newer version is currently in this repo than via pip)
