@@ -11,7 +11,7 @@ The single "[SprinklrClientTest](https://github.com/DzRepo/SprinklrClientTest)" 
 
 External Libraries in use: 
 - [EasySettings](https://libraries.io/pypi/EasySettings) (for the Conf file)
-- [SprinklrClient](https://libraries.io/pypi/SprinklrClient) (NOTE: The newer version is currently in this repo than via pip)
+- [SprinklrClient](https://libraries.io/pypi/SprinklrClient) (NOTE: The version in this repo is newer than the one available via pip)
 - (which uses) [Requests](https://libraries.io/pypi/requests)
 
 Each command (except for [authorize.py](authorize.py) and [FetchAccessToken.py](FetchAccessToken.py)) uses resultprocessor.py as a standard method of making the API call and displaying results. This keeps individual command scripts small, and if a change is needed to the input/output processing it can be done globally very easily.
@@ -50,7 +50,8 @@ Current commands available:
 * [FetchAccountByChannelId](FetchAccountByChannelId.py)
 * [FetchAccountCustomFields](FetchAccountCustomFields.py)  
 * [FetchAllDashboards](FetchAllDashboards.py)  
-* [FetchArchivedCases](FetchArchivedCases.py)  
+* [FetchArchivedCases](FetchArchivedCases.py)
+* [FetchAssetById](FetchAssetById.py)
 * [FetchCaseByNumber](FetchCaseByNumber.py)  
 * [FetchCaseComment](FetchCaseComment.py)  
 * [FetchCaseMessagesById](FetchCaseMessagesById.py)  
@@ -83,7 +84,11 @@ Current commands available:
 * [FetchUserById](FetchUserById.py)  
 * [FetchUserGroups](FetchUserGroups.py)  
 * [FetchWebhookTypes](FetchWebhookTypes.py)  
-* [SearchAssets](SearchAssets.py)  
+* [SearchAssets](SearchAssets.py)
+* [SendEmail](SendEmail.py)
+* [UpdateAsset](UpdateAsset.py)
+* [UploadAsset](UploadAsset.py)
+
 
 ## Format for the Sprinklr.conf file:
 \#  Configuration File Sprinklr.conf  
