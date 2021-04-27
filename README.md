@@ -1,22 +1,17 @@
 # SprinklrClientSamples
 A collection of python command line tools that use the Sprinklr Client Library
+**THESE EXAMPLES & LIBRARY ARE NOT SUPPORTED BY SPRINKLR - USE AT YOUR OWN RISK!**
 
-This is a work in progress, but in a usable state.
+Uses the [SprinklrClient](https://libraries.io/pypi/SprinklrClient) library.
 
-Built using python 3.7+
-
-The SprinklrClient library located here is a bit newer than the one in the main library. The main change being Asset APIs have been tested and fixed.
-
-The single "[SprinklrClientTest](https://github.com/DzRepo/SprinklrClientTest)" repo / app was getting to cumbersome, so this will replace it once all commands have been converted into individual programs.
+The single "[SprinklrClientTest](https://github.com/DzRepo/SprinklrClientTest)" repo / app was getting to cumbersome, so this will replace it once all commands have been converted into individual apps.
 
 External Libraries in use: 
 - [EasySettings](https://libraries.io/pypi/EasySettings) (for the Conf file)
-- [SprinklrClient](https://libraries.io/pypi/SprinklrClient) (NOTE: The version in this repo is newer than the one available via pip)
+- [SprinklrClient](https://libraries.io/pypi/SprinklrClient)
 - (which uses) [Requests](https://libraries.io/pypi/requests)
 
-Each command (except for [authorize.py](authorize.py) and [FetchAccessToken.py](FetchAccessToken.py)) uses resultprocessor.py as a standard method of making the API call and displaying results. This keeps individual command scripts small, and if a change is needed to the input/output processing it can be done globally very easily.
-
-**THESE EXAMPLES & LIBRARY ARE NOT SUPPORTED BY SPRINKLR - USE AT YOUR OWN RISK!**
+Each command (except for [authorize.py](authorize.py) and [FetchAccessToken.py](FetchAccessToken.py)) uses [ResultProcessor](resultprocessor.py) as a standard method of making the API call and displaying results. This keeps individual command scripts small, and if a change is needed to the input/output processing it can be done globally very easily.
 
 Please send feedback (or just let me know you're using them!) to SteveDz at Sprinklr.com
 
@@ -43,25 +38,34 @@ Current commands available:
 
 * [Authorize](authorize.py)
 * [CreateAsset](CreateAsset.py) 
+* [CreateDraftMessage](CreateDraftMessage.py) 
 * [CustomFieldAddOption](CustomFieldAddOption.py)  
 * [CustomFieldDeleteOption](CustomFieldAddOption.py) 
+* [DeleteAccountById](DeleteAccountById.py) 
+* [DeleteMessageById](DeleteMessageById.py) 
 * [FetchAccessibleUsers](FetchAccessibleUsers.py)  
 * [FetchAccessToken](FetchAccessToken.py)
 * [FetchAccountByChannelId](FetchAccountByChannelId.py)
+* [FetchAccountById](FetchAccountById.py)  
 * [FetchAccountCustomFields](FetchAccountCustomFields.py)  
+* [FetchAllCustomFields](FetchAllCustomFields.py)  
 * [FetchAllDashboards](FetchAllDashboards.py)  
 * [FetchArchivedCases](FetchArchivedCases.py)
 * [FetchAssetById](FetchAssetById.py)
+* [FetchAssetImportStatus](FetchAssetImportStatus.py)
 * [FetchCaseByNumber](FetchCaseByNumber.py)  
 * [FetchCaseComment](FetchCaseComment.py)  
-* [FetchCaseMessagesById](FetchCaseMessagesById.py)  
-* [FetchClientProfileLists](FetchClientProfileLists.py)  
+* [FetchCaseMessagesById](FetchCaseMessagesById.py)
+* [FetchCasesByNumbers](FetchCasesByNumbers.py) 
+* [FetchCaseStream](FetchCaseStream.py)
+* [FetchClientProfileLists](FetchClientProfileLists.py) 
 * [FetchClientQueues](FetchClientQueues.py)  
 * [FetchClientUrlShortners](FetchClientUrlShortners.py)  
 * [FetchClientUsers](FetchClientUsers.py)  
-* [FetchClients](FetchClients.py)  
+* [FetchClients](FetchClients.py) 
 * [FetchDashboardByName](FetchDashboardByName.py)  
 * [FetchDashboardStream](FetchDashboardStream.py)  
+* [FetchDraftPost](FetchDraftPost.py)  
 * [FetchInboundCustomFields](FetchInboundCustomFields.py)  
 * [FetchListeningStream](FetchListeningStream.py)  
 * [FetchListeningTopics](FetchListeningTopics.py)  
@@ -84,7 +88,11 @@ Current commands available:
 * [FetchUserById](FetchUserById.py)  
 * [FetchUserGroups](FetchUserGroups.py)  
 * [FetchWebhookTypes](FetchWebhookTypes.py)  
+* [ImportAssetAsync](ImportAssetAsync.py)
+* [PublishPost](PublishPost.py)
+* [SearchEntity](SearchEntity.py)
 * [SearchAssets](SearchAssets.py)
+* [SearchForMessageByPostId](SearchForMessageByPostId.py)
 * [SendEmail](SendEmail.py)
 * [UpdateAsset](UpdateAsset.py)
 * [UploadAsset](UploadAsset.py)

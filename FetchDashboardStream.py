@@ -2,7 +2,6 @@ import sys
 import resultprocessor as rp
 
 def call_api(client):
-    print("Arg Count:", len(sys.argv))
     if len(sys.argv) > 3 and len(sys.argv) < 8:
         dashboard_id = sys.argv[1]
         start = sys.argv[2]
@@ -19,6 +18,7 @@ def call_api(client):
 
         if len(sys.argv) > 6:
             sort_order = sys.argv[6]
+        
         rp.process_response(client, client.fetch_dashboard_stream(dashboard_id, start, rows, start_date, until_date, sort_order))
 
     else:

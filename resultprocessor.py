@@ -1,6 +1,7 @@
 import sys
 import logging
 import json
+import time
 from easysettings import EasySettings
 import SprinklrClient as sc
 
@@ -26,7 +27,7 @@ def main(call_api):
         call_api(client)
 
     except Exception as ex:
-        print("Error:" + str(ex))
+        print("Error: making API Call:" + str(ex))
 
 
 def process_response(client, success):
@@ -54,7 +55,16 @@ def process_response(client, success):
                 else:
                     print(client.result)
             else:
-                print(client.status_message)
+                print("Error:" + str(client.status_code) + ":" + client.status_message )
     except Exception as ex:
         logging.error(str(ex))
         print("Error caught: " + str(ex))
+
+def date_time_toepoch(date_time):
+    return datetime_toepoch(date_time.year, date_time.month, date_time.day, date_time.hour, date_time.minute)
+
+def datetime_toepoch(year: int, month: int, day: int, hour=0, minute=0):
+    return int(float(time.mktime(datetime.datetime(year, month, day, hour, minute).timetuple())) * 1000)
+
+def datetime_fromepoch(epoch):
+    return time.strftime('%Y-%m-%d %H:%M:%S:{0:.0f}'.format(epoch % 1000), time.localtime(epoch))
